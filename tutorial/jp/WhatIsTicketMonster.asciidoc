@@ -40,8 +40,7 @@ link:http://github.com/jboss-jdf/ticket-monster[Fork us on GitHub!]
 image::../gfx/ticket-monster-user-use-cases.png[]
 
 
-管理者ができること
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+==== 管理者ができること
 
 管理者はビジネスの運用に関心があります。
 管理者は場所やイベント、ショウといった_マスタデータ_を管理し、さらに、チケットの売れ行きを確認したいと思うでしょう。
@@ -56,8 +55,7 @@ image::../gfx/ticket-monster-user-use-cases.png[]
 .管理者のユースケース
 image::../gfx/ticket-monster-administration-use-cases.png[]
 
-アーキテクチャ
-~~~~~~~~~~~~
+=== アーキテクチャ
 
 [[architecture-image]]
 .TicketMonster のアーキテクチャ
@@ -76,14 +74,12 @@ Forge では EJB3.1・CDI ・JSF を使っており、UX の向上のために R
 この部分については GWT で開発され、 CDI のクライアント-サーバ間のイベント通知を通して
 リアルタイム更新を行うための Errai サポートを紹介します。
 
-実行方法
-~~~~~~~~
+===  実行方法
 
 TicketMonster のビルド・実行を行う前に、Forge で管理者サイトを作成する必要があります。
 詳細はlink:http://www.jboss.org/jdf/examples/ticket-monster/tutorial/AdminJSF[チュートリアル]を参照してください。
 
-TicketMonster のビルド
-^^^^^^^^^^^^^^^^^^^^^^
+====   TicketMonster のビルド
 
 TicketMonster は 下記の Maven コマンドを実行することでビルドできます。
 
@@ -104,13 +100,11 @@ link:http://openshift.com[OpenShift] 環境にデプロイしたい場合は、`
 
     mvn clean package -Ppostgresql-openshift
 
-TicketMonster の実行
-^^^^^^^^^^^^^^^^^^^^^
+==== TicketMonster の実行
 
 ローカルまたは OpenShift 環境の JBoss AS7 インスタンス上で TicketMonster を実行できます。
 
-ローカル環境での TicketMonster の実行
-+++++++++++++++++++++++++++++
+===== ローカル環境での TicketMonster の実行
 
 まず JBoss Enterprise Application Platform 6 か、 JBoss AS 7 を Web プロファイルで起動してください。
 
@@ -132,8 +126,7 @@ TicketMonster の実行
 3. `target/ticket-monster.war` が起動中のサーバインスタンスにデプロイされます。
 4. アプリケーションが実行されているか、http://localhost:8080/ticket-monster にアクセスして確認してください。
 
-OpenShift 環境での TicketMonster の実行
-++++++++++++++++++++++++++++++++++
+===== OpenShift 環境での TicketMonster の実行
 
 まず、OpenShift プロジェクトを作成します。
 
@@ -170,8 +163,7 @@ OpenShift 環境での TicketMonster の実行
 		
 6. `http://<app-name>-<domain-name>.rhcloud.com` にアクセスし、アプリケーションが実行されている事を確認してください。
 
-さらに詳しく
-~~~~~~~~~~
+=== さらに詳しく
 
 この例では、TicketMonster の作成の過程を一連のチュートリアルを通して示しています。
 
