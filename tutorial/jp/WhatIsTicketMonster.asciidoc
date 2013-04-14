@@ -80,7 +80,7 @@ Forge では EJB3.1・CDI ・JSF を使っており、UX の向上のために R
 リアルタイム更新を行うための Errai サポートを紹介します。
 
 実行方法
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
 
 TicketMonster のビルド・実行を行う前に、Forge で管理者サイトを作成する必要があります。
 詳細はlink:http://www.jboss.org/jdf/examples/ticket-monster/tutorial/AdminJSF[チュートリアル]を参照してください。
